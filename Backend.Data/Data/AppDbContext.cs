@@ -13,5 +13,6 @@ namespace Backend.Data.Data
             
         }
 
+        public DbSet<LocationDetail> LocationDetails { get; set; }
     }
 }
