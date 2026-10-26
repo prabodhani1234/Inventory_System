@@ -1,10 +1,17 @@
-﻿using System;
+﻿using Backend.Domain.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Backend.Data.Data
 {
-    internal class AppDbContext
+    public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+            
+        }
+
     }
 }
