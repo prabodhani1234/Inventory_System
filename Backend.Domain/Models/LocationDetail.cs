@@ -6,14 +6,14 @@ using System.Text;
 
 namespace Backend.Domain.Models
 {
-    public class LocationDetail : BaseEntity
+    public class LocationDetail: BaseEntity
     {
         public long LocationId { get; set; }
         [Required]
         [MaxLength(20)]
         public string LocationCode { get; set; }
         [MaxLength(50)]
-        public string LocationName { get; set; }
+        public string LocationName { get; set; } = string.Empty;
         [MaxLength(50)]
         public string Address1 { get; set; }
         [MaxLength(50)]
